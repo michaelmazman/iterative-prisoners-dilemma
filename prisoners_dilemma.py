@@ -31,7 +31,10 @@ from __future__ import print_function
 # section0, section1, section2, section3 = reports
 #######
 import random
-import os.path              
+import os.path
+
+import teamcb, teamcm, teamge, teamgg
+import teamig, teammm, teampp, teamrh, teamtv
     
 import example0, example1, example2, example3
 import example4, example5, example6, example7
@@ -39,7 +42,7 @@ import example4, example5, example6, example7
 betray = example1
 collude = example0
 
-modules = [example0, example1, example2, example3, example4, example5, example6, example7]
+modules = [teamcb, teamcm, teamge, teamgg, teamig, teammm, teampp, teamrh, teamtv]
 for module in modules:
     reload(module)
     print ('reloaded',module)
@@ -374,5 +377,5 @@ def post_to_file(string, filename='tournament.txt', directory=''):
  
 ### Call main_play() if this file is executed
 if __name__ == '__main__':
-    scores, moves, reports = main_play(modules[0:7])   
+    scores, moves, reports = main_play(modules[0:9])   
     section0, section1, section2, section3 = reports

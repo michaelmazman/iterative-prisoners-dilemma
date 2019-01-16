@@ -7,8 +7,9 @@
 ####
 
 team_name = 'Teacher'
-strategy_name = 'Collude'
-strategy_description = 'Always collude.'
+strategy_name = 'Collude until betrayed'
+strategy_description = '''\
+Collude first round. Collude, unless betrayed; then always betray.'''
     
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
@@ -20,7 +21,7 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
-    
-    # This player always colludes.
-    return 'c'
-    
+    if 'b' in their_history:
+        return 'b'
+    else:
+        return 'c'
