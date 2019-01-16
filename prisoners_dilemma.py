@@ -42,11 +42,8 @@ import example4, example5, example6, example7
 betray = example1
 collude = example0
 
-<<<<<<< HEAD
 modules = [teamcb, teamcm, teamge, teamgg, teamig, teammm, teampp, teamrh, teamtv]
-=======
-modules = [example0, example1, example2, example3, example4, example5, example6, example7]
->>>>>>> 9060d1f722982b69f5b082745dd29a5ab9df86df
+
 for module in modules:
     reload(module)
     print ('reloaded',module)
