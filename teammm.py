@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Michael'
+team_name = 'MichaelM'
 strategy_name = 'Use early history'
 strategy_description = '''\
 Collude first round. Compare all rounds to the previous round and 
